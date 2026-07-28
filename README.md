@@ -6,8 +6,7 @@
 
 This notebook loads a large company financial dataset and filters it down to one industry and one fiscal year to compute summary statistics. The core task is finding the mean Total Assets for companies in a specific NAICS industry code during fiscal year 2018.
 
-Author (from notebook metadata): Tanmay Tiwari
-Course: AFM244
+Author: Tanmay Tiwari
 
 ## Data
 
@@ -16,8 +15,6 @@ Course: AFM244
 The dataset has 254,553 rows and 21 columns, covering fiscal years from 2000 to 2022. Columns include:
 
 `gvkey, datadate, fyear, indfmt, consol, popsrc, datafmt, tic, conm, curcd, at, cogs, csho, emp, ib, oibdp, sale, costat, prcc_c, naics`
-
-I am not fully certain of the exact source, but these column names (gvkey, indfmt, popsrc, oibdp, at) match the standard field names used in Compustat's annual fundamentals data. You may want to confirm this against your course materials.
 
 Key columns used in the analysis:
 - `naics`: industry classification code
@@ -37,8 +34,6 @@ Key columns used in the analysis:
 8. Notes the finding in a comment.
 
 ## Key Finding
-
-NAICS code 454110 corresponds to Electronic Shopping and Mail Order Houses, confirmed via a NAICS classification lookup.
 
 For fiscal year 2018, the mean Total Assets (`at`) across companies in this industry is approximately 5477.83. The notebook does not state the currency or unit of measurement (Compustat's `at` field is typically reported in millions, but that is not confirmed anywhere in this notebook, so you may want to verify it before citing the figure).
 
